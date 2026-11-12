@@ -39,3 +39,7 @@ apps/spreadsheeteditor/mobile/offlinedocs
 selenium-debug.log
 **/test/bin
 **/test/reports
+
+# mobile-edit: build output of the mobile editors
+apps/*/mobile/dist/
+apps/*/mobile/index.html

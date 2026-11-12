@@ -1,0 +1,10 @@
+# Single source of truth for the version this branch is built against.
+# Read by the scripts in this folder (shell syntax) and rewritten by update.sh.
+UPSTREAM_TAG=v10.0.0.169
+PRODUCT_VERSION=10.0.0
+BUILD_NUMBER=169
+# Official image the patched image is based on. Its package build must equal
+# PRODUCT_VERSION-BUILD_NUMBER (the Dockerfile refuses to build otherwise).
+BASE_IMAGE=onlyoffice/documentserver:10.0.0.1
+# Bump when the patch changes without a new upstream version.
+REVISION=r2
